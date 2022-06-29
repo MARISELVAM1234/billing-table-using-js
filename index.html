@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <section class="bill">
+    <h1>Structure of  Bill</h1>
+    <table border="2px" width="700px" class="table-cls">
+        <tr>
+            <th>S.No</th>
+            <th>Product Name</th>
+            <th>Quantity</th>
+            <th>Unit Price</th>
+            <th> Price</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Tv</td>
+            <td>
+                <select id="itemof-tv" onchange="tvItem()" >
+                    <option value="">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </td>
+            <td>1000</td>
+            <td id="tv-product-amount">
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>chair & Tabel</td>
+            <td>
+                <select id="itemof-chair" onchange="chairItem()">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+            </td>
+            <td>300</td>
+            <td id="chair-product-amount">
+               
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Sofa set</td>
+            <td>
+                <select  id="itemof-sofa"   onchange="sofaItem()">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+            </td>
+            <td>2000</td>
+            <td id="sofa-product-amount">
+               
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>bed</td>
+            <td>
+                <select id="itemof-bed" onchange="bedItem()">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+            </td>
+            <td>10000</td>
+            <td id="bed-product-amount">
+               
+            </td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Refrigerator</td>
+            <td>
+                <select id="itemof-refrigerator" onchange="refrigeratorItem()">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+            </td>
+            <td>15000</td>
+            <td id="refrigerator-product-amount">
+               
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">Total</td>
+            <td id="total-product-amount" > </td>
+        </tr>
+        <tr>
+            <td colspan="4">Tax 18%</td>
+            <td id="tax-amount" onchange="tax()"> </td>
+        </tr>
+        <tr>
+            <td colspan="4">Grand Total</td>
+            <td id="grand-total"> </td>
+        </tr>
+
+
+
+    </table>
+
+</section>
+    <script src="/script.js"></script>
+</body>
+</html>
